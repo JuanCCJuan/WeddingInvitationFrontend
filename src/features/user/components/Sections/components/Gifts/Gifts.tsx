@@ -26,10 +26,10 @@ export const Gifts = (): JSX.Element => {
             <div className={ `center ${styles.gifts__actions}` }>
                 {/* Cuenta bancaria */}
                 <div className={ styles.info }>
-                    <h4 className={ styles.info__title }>Cuenta</h4>
+                    <h4 className={ styles.info__title }>Cuenta Nu</h4>
 
                     <p className={ `center ${styles.info__account}` }>
-                        <img className={ styles.icon } src={ creditIcon } alt="Cuenta" loading="lazy" /> XXXX XXXX XXXX XXXX
+                        <img className={ styles.icon } src={ creditIcon } alt="Cuenta" loading="lazy" /> 5101 2570 5555 3542
                     </p>
                 </div>
 
