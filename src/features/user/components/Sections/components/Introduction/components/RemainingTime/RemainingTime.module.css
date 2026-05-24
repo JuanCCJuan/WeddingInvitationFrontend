@@ -1,0 +1,13 @@
+/* ELEMENTS */
+
+.portion {
+    flex: 1 1 100%;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portion__value {
+    font-size: 4rem;
+    font-family: var(--libertinus);
+}

@@ -1,0 +1,79 @@
+/* ELEMENTS */
+
+.loading {
+    gap: 2rem;
+    width: 100%;
+    padding: 3%;
+    height: 100svh;
+    flex-direction: column;
+}
+
+.spinner {
+    gap: 1rem;
+}
+
+.line {
+    height: 1rem;
+    width: 0.4rem;
+    background-color: var(--primary);
+    animation: loading 1.6s linear infinite;
+    -webkit-animation: loading 1.6s linear infinite;
+}
+
+.line--1 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.line--2 {
+    animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
+}
+
+.line--3 {
+    animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
+}
+
+.line--4 {
+    animation-delay: 1200ms;
+    -webkit-animation-delay: 1200ms;
+}
+
+.loading__text {
+    font-size: 2.4rem;
+    color: var(--text);
+    font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes loading {
+    0% {
+        transform: scaleY(1);
+        background-color: var(--primary);
+    }
+    25% {
+        transform: scaleY(4);
+        background-color: var(--secondary);
+    }
+    50% {
+        transform: scaleY(1);
+        background-color: var(--primary);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: scaleY(1);
+        background-color: var(--primary);
+    }
+    25% {
+        transform: scaleY(4);
+        background-color: var(--secondary);
+    }
+    50% {
+        transform: scaleY(1);
+        background-color: var(--primary);
+    }
+}

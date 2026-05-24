@@ -1,0 +1,18 @@
+/* ELEMENTS */
+
+.filter {
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--white);
+    place-self: center center;
+    background-color: inherit;
+}
+
+.filter--selected {
+    color: var(--background);
+    background-color: var(--white);
+}

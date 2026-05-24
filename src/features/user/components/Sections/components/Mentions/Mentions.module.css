@@ -1,0 +1,49 @@
+/* ELEMENTS */
+
+.mentions {
+    gap: 2rem;
+    padding: 4rem 2rem;
+    flex-direction: column;
+}
+
+.mention {
+    text-align: center;
+    color: var(--white);
+}
+
+.mention__title {
+    font-weight: 100;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-family: var(--libertinus);
+}
+
+.title__role {
+    font-size: 3rem;
+    line-height: 100%;
+    color: var(--primary);
+    text-transform: lowercase;
+    font-family: var(--birthstone);
+}
+
+.mention__content {
+    z-index: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    position: relative;
+    white-space: nowrap;
+}
+
+.mention__content::before {
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    content: "&";
+    font-size: 4rem;
+    position: absolute;
+    color: var(--primary);
+    font-family: var(--licorice);
+    transform: translate(-50%, -50%);
+}

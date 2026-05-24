@@ -1,0 +1,10 @@
+/* ELEMENTS */
+
+.divisor--top {
+    margin-bottom: -0.1rem;
+    transform: rotateZ(180deg);
+}
+
+.divisor--bottom {
+    margin-top: -0.1rem;
+}

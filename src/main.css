@@ -1,0 +1,73 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Libertinus+Serif+Display&family=Licorice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIABLES */
+
+:root {
+    /* Colors */
+    --text: #555353;
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary: #84A2BC;
+    --secondary: #3D638D;
+    --background: #282828;
+    
+    /* Fonts */
+    --licorice: "Licorice", cursive;
+    --montserrat: "Montserrat", sans-serif;
+    --birthstone: "Birthstone Bounce", cursive;
+    --libertinus: "Libertinus Serif Display", system-ui;
+}
+
+/* GLOBALS */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    line-height: normal;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FUNCTIONALITIES */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+}

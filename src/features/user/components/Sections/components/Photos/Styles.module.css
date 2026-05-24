@@ -1,0 +1,120 @@
+/* ELEMENTS */
+
+.photos {
+    gap: 4rem;
+    padding: 4rem 4rem;
+    color: var(--white);
+    flex-direction: column;
+}
+
+.subsection {
+    gap: 2rem;
+    width: 100%;
+    display: flex;
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subsection__title {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 100%;
+    font-family: var(--licorice);
+}
+
+.title__letter {
+    font-size: 8rem;
+    line-height: 100%;
+}
+
+.slider {
+    gap: 2rem;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 0.5rem;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: x mandatory;
+}
+
+.slider::-webkit-scrollbar {
+    height: 0.5rem;
+}
+
+.slider::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    border-radius: 0.8rem;
+    background-color: var(--white);
+}
+
+.thumbnail {
+    flex: 1 0 60%;
+    overflow: hidden;
+    max-width: 20rem;
+    border-radius: 1rem;
+    aspect-ratio: 9 / 12;
+    scroll-snap-align: center;
+}
+
+.thumbnail__image {
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.subsection__qr {
+    width: 100%;
+    overflow: hidden;
+    max-width: 20rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+
+.blur {
+    top: 0;
+    left: 50%;
+    width: 100%;
+    z-index: 10;
+    padding: 4rem;
+    height: 100dvh;
+    position: fixed;
+    max-width: 50rem;
+    transform: translateX(-50%);
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.image__close {
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--white);
+    transform: translate(20%, -20%);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.close__icon {
+    width: 2.2rem;
+}
+
+.image__source {
+    object-fit: cover;
+    border-radius: 2rem;
+    aspect-ratio: 9 / 13;
+    -o-object-fit: cover;
+    border: 0.1rem solid var(--white);
+}

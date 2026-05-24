@@ -1,0 +1,63 @@
+/* ELEMENTS */
+
+.cover {
+    height: 100svh;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent 20%);
+}
+
+.title {
+    font-weight: 100;
+    white-space: nowrap;
+    font-family: var(--licorice);
+    font-size: clamp(3.5rem, 12vw, 4.5rem);
+    animation: appear 1.2s ease-out 1 forwards;
+    -webkit-animation: appear 1.2s ease-out 1 forwards;
+}
+
+.title__letter {
+    font-size: clamp(7rem, 24vw, 9rem);
+}
+
+.subtitle {
+    font-weight: 100;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: var(--libertinus);
+    animation: appear 1.2s ease-out 1 forwards;
+    -webkit-animation: appear 1.2s ease-out 1 forwards;
+}
+
+.subtitle__day {
+    font-size: 8rem;
+    line-height: 100%;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes appear {
+    from {
+        opacity: 0;
+        letter-spacing: 10rem;
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        letter-spacing: 10rem;
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 0.5rem;
+    }
+}
