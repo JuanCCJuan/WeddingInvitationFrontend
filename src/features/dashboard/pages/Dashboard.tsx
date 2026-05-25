@@ -31,11 +31,11 @@ export const Dashboard = (): JSX.Element => {
     }
 
     return (
-        <div className={ styles.dashboard }>
+        <div className={ `center ${styles.dashboard}` }>
             <h1 className={ styles.dashboard__title }>Invitaciones</h1>
 
-            <div className={ styles.dashboard__content }>
-                <div className={ styles.dashboard__filters }>
+            <div className={ `center ${styles.dashboard__content}` }>
+                <div className={ styles.content__filters }>
                     {
                         FILTERS.map(({ label, value }) => (
                             <Filter

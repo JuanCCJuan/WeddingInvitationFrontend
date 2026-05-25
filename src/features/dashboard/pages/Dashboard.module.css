@@ -1,7 +1,12 @@
 /* ELEMENTS */
 
 .dashboard {
+    gap: 2rem;
+    width: 100%;
     padding: 3%;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .dashboard__title {
@@ -11,26 +16,31 @@
 }
 
 .dashboard__content {
+    gap: 4rem;
     width: 100%;
+    min-height: 0;
+    flex: 1 1 100%;
     max-width: 40rem;
-    margin: 2rem auto 0;
-}
-
-.content__list {
-    gap: 1rem;
-    width: 100%;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
-.dashboard__filters {
+.content__filters {
     gap: 1rem;
     width: 100%;
     padding: 1rem;
     display: grid;
     border-radius: 2rem;
-    margin-bottom: 4rem;
     background-color: var(--background);
     grid-template-columns: repeat(2, 1fr);
+}
+
+.content__list {
+    gap: 1rem;
+    width: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .empty {
