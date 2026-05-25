@@ -55,6 +55,7 @@
 
 .thumbnail {
     flex: 1 0 60%;
+    cursor: pointer;
     overflow: hidden;
     max-width: 20rem;
     border-radius: 1rem;
@@ -91,19 +92,22 @@
 }
 
 .image {
+    max-height: 90dvh;
     position: relative;
     border-radius: 1rem;
+    aspect-ratio: 9 / 13;
 }
 
 .image__close {
-    top: 0;
-    right: 0;
+    top: 0.5rem;
+    right: 0.5rem;
     padding: 1rem;
+    cursor: pointer;
     aspect-ratio: 1;
     position: absolute;
     border-radius: 50%;
     background-color: var(--white);
-    transform: translate(20%, -20%);
+    transform: translate(25%, -25%);
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
@@ -114,7 +118,7 @@
 .image__source {
     object-fit: cover;
     border-radius: 2rem;
-    aspect-ratio: 9 / 13;
+    /* aspect-ratio: 9 / 13; */
     -o-object-fit: cover;
     border: 0.1rem solid var(--white);
 }

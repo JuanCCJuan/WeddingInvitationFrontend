@@ -25,7 +25,7 @@ export const Thumbnail = ({ src }: Props): JSX.Element => {
 
             {
                 showImage && 
-                <div className={ `center ${styles.blur}` }>
+                <div className={ `center ${styles.blur}` } onClick={ () => setShowImage(false) }>
                     <div className={ `center ${styles.image}` }>
                         <div className={ `center ${styles.image__close}` } onClick={ () => setShowImage(false) }>
                             <img className={ styles.close__icon } src="/assets/icons/close.svg" alt="Cerrar" loading="lazy" />

@@ -8,9 +8,9 @@
     height: 100lvh;
     position: fixed;
     max-width: 50rem;
-    background-size: cover;
     transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("/assets/background.webp");
+}
+
+.background__image {
+    object-fit: cover;
 }
