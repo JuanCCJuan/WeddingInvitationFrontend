@@ -21,7 +21,7 @@ export const mentionsList: MentionContent[] = [
     {
         role: "velación", 
         title: "Padrinos de", 
-        firstPerson: "María Angélica García Rodríguez", 
+        firstPerson: "Angélica García Rodríguez", 
         secondPerson: "Victor Hugo Bejarano Hurtado", 
     }, 
     {
