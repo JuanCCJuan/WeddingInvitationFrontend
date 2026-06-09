@@ -24,3 +24,14 @@ export const handleSend = (_id: string): void => {
 
     window.open(url, "_blank");
 }
+
+// Copia el link al portapapeles
+export const handleCopy = async (_id: string): Promise<void> => {
+    const link: string = `${window.location.origin}/invitaciones/${_id}`;
+
+    try {
+        await navigator.clipboard.writeText(link);
+    } catch (error) {
+        console.error("Error al copiar:", error);
+    }
+}

@@ -3,13 +3,17 @@ import styles from "./InvitationItem.module.css";
 
 /* DEPENDENCIES */
 import { type JSX } from "react";
-import { handleSend, getStatusInfo } from "./invitationActions";
+import { useInvitationItem } from "./useInvitationItem";
 import { type UserInvitation } from "../../../../types/UserInvitation";
 
 /* ICONS */
 import sendIcon from "/assets/icons/send.svg";
+import copyIcon from "/assets/icons/copy.svg";
+import checkIcon from "/assets/icons/check.svg";
 
 export const InvitationItem = ({ status, head, guests, _id }: UserInvitation): JSX.Element => {
+    const { isCopy, handleCopy, handleSend, getStatusInfo } = useInvitationItem();
+
     const [ backgroundColor, name ] = getStatusInfo(status);
 
     return (
@@ -19,8 +23,12 @@ export const InvitationItem = ({ status, head, guests, _id }: UserInvitation): J
                 
                 <h2 className={ styles.header__name }>{ name }</h2>
 
-                <button className={ `center ${styles.header__send}` } type="button" onClick={ () => handleSend(_id) }>
-                    <img className={ styles.send__icon } src={ sendIcon } alt="Send" />
+                <button className={ `center ${styles.header__button} ${styles["header__button--copy"]}` } type="button" onClick={ () => handleCopy(_id) }>
+                    <img className={ styles.button__icon } src={ isCopy ? checkIcon : copyIcon } alt="Send" />
+                </button>
+
+                <button className={ `center ${styles.header__button}` } type="button" onClick={ () => handleSend(_id) }>
+                    <img className={ styles.button__icon } src={ sendIcon } alt="Send" />
                 </button>
             </header>
 
