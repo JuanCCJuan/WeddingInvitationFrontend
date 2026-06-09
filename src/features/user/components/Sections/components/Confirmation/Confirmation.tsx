@@ -34,10 +34,15 @@ export const Confirmation = (): JSX.Element => {
                     </p>
                 }
 
-                <p>
-                    En caso de que no te sea posible acompañarnos, te agradeceremos también cancelar 
-                    tu asistencia para poder organizar todo de la mejor manera.
-                </p>
+                {
+                    !isPending && 
+                    <p>
+                        En caso de que no te sea posible acompañarnos, te agradeceremos también cancelar 
+                        tu asistencia para poder organizar todo de la mejor manera.
+                    </p>
+                }
+
+                <strong className={ styles.confirmation__notice }>No niños</strong>
 
                 <div className={ `center ${styles.confirmation__actions}` }>
                     {

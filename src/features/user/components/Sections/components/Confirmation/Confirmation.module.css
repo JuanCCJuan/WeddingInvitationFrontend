@@ -22,6 +22,10 @@
     line-height: 100%;
 }
 
+.confirmation__notice {
+    text-transform: uppercase;
+}
+
 .confirmation__actions {
     gap: 1rem;
     width: 100%;
