@@ -22,10 +22,6 @@ export const Invitation = (): JSX.Element => {
     // Obtiene el tiempo maximo de validez de la invitacion
     const { offset } = useTime(finalTime);
 
-    if(offset === 0) {
-        return <Error message="Lamentamos que no hayas aceptado tu invitación a tiempo, razón por la cual ha sido cancelada :(." />
-    }
-
     if(isLoading) {
         return <Loading />;
     }
@@ -36,6 +32,10 @@ export const Invitation = (): JSX.Element => {
     
     if(invitation.status === "CANCELED") {
         return <Error message="Ha ocurrido un error al tratar de obtener tu invitación. Posiblemente la cancelaste :(." />;
+    }
+
+    if(offset === 0 && invitation.status !== "ACCEPTED") {
+        return <Error message="¡Hola! 💕 Debido a que no recibimos la confirmación dentro del tiempo establecido, la invitación se canceló automáticamente. Agradecemos mucho tu comprensión y esperamos poder contar contigo en otra ocasión." />
     }
 
     return (
