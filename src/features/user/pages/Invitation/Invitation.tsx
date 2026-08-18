@@ -11,7 +11,7 @@ import { usePopupContext } from "../../hooks/usePopupContext";
 import { Error, Loading } from "../../../../components/ui";
 import { Cover, Background, Sections, ConfirmPopup, CancelPopup } from "../../components";
 
-const finalTime: number = new Date("2026-08-23T00:00:00.000-06:00").getTime();
+const finalTime: number = new Date("2026-08-20T00:00:00.000-06:00").getTime();
 
 export const Invitation = (): JSX.Element => {
     const { popupState } = usePopupContext();
