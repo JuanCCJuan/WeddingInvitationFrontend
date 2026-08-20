@@ -29,7 +29,7 @@ export const Confirmation = (): JSX.Element => {
                 {
                     isPending && 
                     <p>
-                        Nos ayudaría mucho que puedas confirmar tu asistencia antes del <strong>20 de agosto</strong>, 
+                        Nos ayudaría mucho que puedas confirmar tu asistencia antes del <strong>23 de agosto</strong>, 
                         de caso contrario, se cancelará en automático y será asignada a otra persona.
                     </p>
                 }

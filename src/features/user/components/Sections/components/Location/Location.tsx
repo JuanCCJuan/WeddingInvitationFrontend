@@ -48,7 +48,7 @@ export const Location = (): JSX.Element => {
                     <div className={ styles.info }>
                         <h4 className={ styles.info__title }>Salón de Eventos Emes</h4>
                         <p>Calz. Revolución 2120, Sutaj, 44840 Guadalajara, Jal.</p>
-                        <strong className={ styles.info__time }>a las 07:00 P.M.</strong>
+                        <strong className={ styles.info__time }>a las 06:30 P.M.</strong>
                     </div>
 
                     <a className={ styles.subsection__action } href="https://maps.app.goo.gl/ezhDZ33yCQX8YPLX7" target="_blank">
