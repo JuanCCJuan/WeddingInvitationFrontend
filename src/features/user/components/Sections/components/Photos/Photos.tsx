@@ -43,7 +43,7 @@ export const Photos = (): JSX.Element => {
                     <p>Escanea el código QR para poder ver las fotos del evento y agregar las tuyas !</p>
 
                     <div className={ styles.subsection__qr }>
-                        <img className="image" src="/public/assets/main/qr.webp" alt="QR" />
+                        <img className="image" src="/assets/main/qr.webp" alt="QR" />
                     </div>
                 </article>
             }
